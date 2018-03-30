@@ -9,3 +9,14 @@ node
 npm
 
 express `npm install express-generator -g` I'm using linux and had to do this with sudo
+
+add api-definitions
+
+`npm install -g yo`
+
+`npm install -g generator-swaggerize`
+
+Generate server scaffolding by running:
+`yo swaggerize`
+
+'npm start' and then run on localhost:8000 (you may have to install some more npm packages)
