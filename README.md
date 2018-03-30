@@ -9,3 +9,9 @@ node
 npm
 
 express `npm install express-generator -g` I'm using linux and had to do this with sudo
+
+add api-definitions
+
+`npm install -g yo`
+
+`npm install -g generator-swaggerize`
