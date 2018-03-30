@@ -13,11 +13,11 @@
         "registry": "https://registry.npmjs.org"
     },
     "dependencies": {
-        "body-parser": "^1.15.0",
-        "express": "^4.0.0",
-        "swaggerize-express": "^4.0.0",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.3",
+        "swaggerize-express": "^4.0.5",
         "swaggerize-ui": "^1.0.1",
-        "swagmock": "~0.0.2"
+        "swagmock": "0.0.5"
     },
     "devDependencies": {
         "eslint": "^2",

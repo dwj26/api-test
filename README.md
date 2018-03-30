@@ -18,3 +18,5 @@ add api-definitions
 
 Generate server scaffolding by running:
 `yo swaggerize`
+
+'npm start' and then run on localhost:8000 (you may have to install some more npm packages)
