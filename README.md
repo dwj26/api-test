@@ -5,5 +5,7 @@ from here https://docs.microsoft.com/en-us/windows/uwp/get-started/get-started-t
 
 ## dependencies
 node
+
 npm
-express `npm install express-generator -g` I'm using linux and had to do this with sudo 
+
+express `npm install express-generator -g` I'm using linux and had to do this with sudo
