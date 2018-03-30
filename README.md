@@ -15,3 +15,6 @@ add api-definitions
 `npm install -g yo`
 
 `npm install -g generator-swaggerize`
+
+Generate server scaffolding by running:
+`yo swaggerize`
