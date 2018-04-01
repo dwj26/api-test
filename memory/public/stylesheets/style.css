@@ -1,0 +1,26 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.flipContainer{
+  perspective: 1000px;
+}
+
+.cards{
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+  height: 100px;
+}
+
+.cards.flip{
+  transform: rotateY(180deg);
+}
+
+.cards.back{
+  height: auto;
+}
