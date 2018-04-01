@@ -180,7 +180,7 @@ function flipCard(card) {
                             output = "<div id=\"playAgain\"><p>You Win!</p><input type=\"button\" onClick=\"location.reload()\" value=\"Play Again\" class=\"btn\" /></div>";
                             $("#game-board").html(output);
                           }, 1000);
-                        } 
+                        }
 
                     }
                     else {
@@ -189,6 +189,8 @@ function flipCard(card) {
                             // reset the background color
                             $("#" + selectedCards[0]).toggleClass("flip");
                             $("#" + selectedCards[1]).toggleClass("flip");
+                            $("#" + selectedCards[0] + " .back").html('');
+                            $("#" + selectedCards[1] + " .back").html('');
 
                             // reset our selection arrays
                             selectedCards = [];
