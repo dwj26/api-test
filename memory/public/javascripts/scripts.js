@@ -132,19 +132,19 @@ function flipCard(card) {
         if (selectedCards.length == 0) {
             // store the first card selection
             selectedCards.push(card.id);
-
+            //
             // post this guess to the server and get this card's value
-            // $.ajax({
-            //     url: "http://localhost:8000/guess?card=" + selectedCards[0],
-            //     type: 'PUT',
-            //     success: function (response) {
-            //         // display first card value
-            //         $("#" + selectedCards[0] + " .back").html(lookUpGlyphicon(response[0].value));
+            $.ajax({
+                url: "http://localhost:8000/guess?card=" + selectedCards[0],
+                type: 'PUT',
+                success: function (response) {
+                    // display first card value
+                    $("#" + selectedCards[0] + " .back").html(lookUpGlyphicon(response[0].value));
 
-            //         // store the first card value
-            //         selectedCardsValues.push(response[0].value);
-            //     }
-            // });
+                    // store the first card value
+                    selectedCardsValues.push(response[0].value);
+                }
+            });
         }
         else if (selectedCards.length == 1) {
             // store the second card selection
@@ -175,7 +175,12 @@ function flipCard(card) {
                         selectedCardsValues = [];
 
                         // check if the user won the game
-                        // Add code from Part 2.6 here
+                        if (cardsFlipped == gameBoardSize) {
+                          setTimeout(function () {
+                            output = "<div id=\"playAgain\"><p>You Win!</p><input type=\"button\" onClick=\"location.reload()\" value=\"Play Again\" class=\"btn\" /></div>";
+                            $("#game-board").html(output);
+                          }, 1000);
+                        } 
 
                     }
                     else {
