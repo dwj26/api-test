@@ -15,3 +15,7 @@ a {
   transform-style: preserve-3d;
   transition-duration: 1s;
 }
+
+.cards.flip{
+  transform: rotateY(180deg);
+}
