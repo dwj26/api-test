@@ -11,7 +11,7 @@ a {
   perspective: 1000px;
 }
 
-.card{
+.cards{
   transform-style: preserve-3d;
   transition-duration: 1s;
 }
