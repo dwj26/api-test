@@ -10,3 +10,8 @@ a {
 .flipContainer{
   perspective: 1000px;
 }
+
+.card{
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
