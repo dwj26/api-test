@@ -14,8 +14,13 @@ a {
 .cards{
   transform-style: preserve-3d;
   transition-duration: 1s;
+  height: 100px;
 }
 
 .cards.flip{
   transform: rotateY(180deg);
+}
+
+.cards.back{
+  height: auto;
 }
